@@ -1,0 +1,540 @@
+{
+    "customers": [
+        {
+            "customer_id": "C001",
+            "name": "Customer 1"
+        },
+        {
+            "customer_id": "C002",
+            "name": "Customer 2"
+        },
+        {
+            "customer_id": "C003",
+            "name": "Customer 3"
+        },
+        {
+            "customer_id": "C004",
+            "name": "Customer 4"
+        },
+        {
+            "customer_id": "C005",
+            "name": "Customer 5"
+        },
+        {
+            "customer_id": "C006",
+            "name": "Customer 6"
+        },
+        {
+            "customer_id": "C007",
+            "name": "Customer 7"
+        },
+        {
+            "customer_id": "C008",
+            "name": "Customer 8"
+        },
+        {
+            "customer_id": "C009",
+            "name": "Customer 9"
+        },
+        {
+            "customer_id": "C010",
+            "name": "Customer 10"
+        }
+    ],
+    "products": [
+        {
+            "product_id": "P001",
+            "name": "Product 1",
+            "stock_level": 125,
+            "price": 25.00,
+            "cost": 10.00
+        },
+        {
+            "product_id": "P002",
+            "name": "Product 2",
+            "stock_level": 72,
+            "price": 30.00,
+            "cost": 12.00
+        },
+        {
+            "product_id": "P003",
+            "name": "Product 3",
+            "stock_level": 144,
+            "price": 45.00,
+            "cost": 18.00
+        },
+        {
+            "product_id": "P004",
+            "name": "Product 4",
+            "stock_level": 126,
+            "price": 55.00,
+            "cost": 22.00
+        },
+        {
+            "product_id": "P005",
+            "name": "Product 5",
+            "stock_level": 145,
+            "price": 35.00,
+            "cost": 14.00
+        },
+        {
+            "product_id": "P006",
+            "name": "Product 6",
+            "stock_level": 182,
+            "price": 60.00,
+            "cost": 25.00
+        },
+        {
+            "product_id": "P007",
+            "name": "Product 7",
+            "stock_level": 187,
+            "price": 75.00,
+            "cost": 30.00
+        },
+        {
+            "product_id": "P008",
+            "name": "Product 8",
+            "stock_level": 140,
+            "price": 85.00,
+            "cost": 35.00
+        },
+        {
+            "product_id": "P009",
+            "name": "Product 9",
+            "stock_level": 51,
+            "price": 40.00,
+            "cost": 16.00
+        },
+        {
+            "product_id": "P010",
+            "name": "Product 10",
+            "stock_level": 47,
+            "price": 95.00,
+            "cost": 40.00
+        }
+    ],
+    "purchases": [
+        {
+            "purchase_id": "PUR000",
+            "customer_id": "C007",
+            "product_id": "P001",
+            "quantity": 5,
+            "price": 25.00,
+            "timestamp": "2025-06-29T13:53:22.380271"
+        },
+        {
+            "purchase_id": "PUR001",
+            "customer_id": "C001",
+            "product_id": "P010",
+            "quantity": 4,
+            "price": 95.00,
+            "timestamp": "2025-06-21T03:38:50.924782"
+        },
+        {
+            "purchase_id": "PUR002",
+            "customer_id": "C002",
+            "product_id": "P008",
+            "quantity": 2,
+            "price": 85.00,
+            "timestamp": "2025-06-22T09:17:44.763515"
+        },
+        {
+            "purchase_id": "PUR003",
+            "customer_id": "C008",
+            "product_id": "P007",
+            "quantity": 1,
+            "price": 75.00,
+            "timestamp": "2025-07-12T21:35:48.834601"
+        },
+        {
+            "purchase_id": "PUR004",
+            "customer_id": "C002",
+            "product_id": "P009",
+            "quantity": 3,
+            "price": 40.00,
+            "timestamp": "2025-06-24T19:18:42.681678"
+        },
+        {
+            "purchase_id": "PUR005",
+            "customer_id": "C006",
+            "product_id": "P009",
+            "quantity": 4,
+            "price": 40.00,
+            "timestamp": "2025-07-08T10:14:18.153849"
+        },
+        {
+            "purchase_id": "PUR006",
+            "customer_id": "C010",
+            "product_id": "P008",
+            "quantity": 4,
+            "price": 85.00,
+            "timestamp": "2025-07-02T08:02:25.616061"
+        },
+        {
+            "purchase_id": "PUR007",
+            "customer_id": "C008",
+            "product_id": "P008",
+            "quantity": 1,
+            "price": 85.00,
+            "timestamp": "2025-07-07T21:15:21.207135"
+        },
+        {
+            "purchase_id": "PUR008",
+            "customer_id": "C004",
+            "product_id": "P003",
+            "quantity": 5,
+            "price": 45.00,
+            "timestamp": "2025-07-07T15:28:51.228887"
+        },
+        {
+            "purchase_id": "PUR009",
+            "customer_id": "C010",
+            "product_id": "P001",
+            "quantity": 5,
+            "price": 25.00,
+            "timestamp": "2025-07-06T18:21:37.005373"
+        },
+        {
+            "purchase_id": "PUR010",
+            "customer_id": "C005",
+            "product_id": "P001",
+            "quantity": 2,
+            "price": 25.00,
+            "timestamp": "2025-06-30T04:21:02.891846"
+        },
+        {
+            "purchase_id": "PUR011",
+            "customer_id": "C008",
+            "product_id": "P005",
+            "quantity": 1,
+            "price": 35.00,
+            "timestamp": "2025-07-11T13:45:16.175217"
+        },
+        {
+            "purchase_id": "PUR012",
+            "customer_id": "C001",
+            "product_id": "P001",
+            "quantity": 5,
+            "price": 25.00,
+            "timestamp": "2025-07-15T04:31:52.901814"
+        },
+        {
+            "purchase_id": "PUR013",
+            "customer_id": "C009",
+            "product_id": "P005",
+            "quantity": 4,
+            "price": 35.00,
+            "timestamp": "2025-07-11T17:45:08.002864"
+        },
+        {
+            "purchase_id": "PUR014",
+            "customer_id": "C005",
+            "product_id": "P002",
+            "quantity": 4,
+            "price": 30.00,
+            "timestamp": "2025-07-12T02:32:17.624029"
+        },
+        {
+            "purchase_id": "PUR015",
+            "customer_id": "C009",
+            "product_id": "P004",
+            "quantity": 1,
+            "price": 55.00,
+            "timestamp": "2025-06-16T02:23:19.818426"
+        },
+        {
+            "purchase_id": "PUR016",
+            "customer_id": "C008",
+            "product_id": "P007",
+            "quantity": 1,
+            "price": 75.00,
+            "timestamp": "2025-06-27T18:10:33.135477"
+        },
+        {
+            "purchase_id": "PUR017",
+            "customer_id": "C010",
+            "product_id": "P007",
+            "quantity": 2,
+            "price": 75.00,
+            "timestamp": "2025-07-14T15:12:48.732756"
+        },
+        {
+            "purchase_id": "PUR018",
+            "customer_id": "C004",
+            "product_id": "P009",
+            "quantity": 4,
+            "price": 40.00,
+            "timestamp": "2025-06-19T02:20:27.990802"
+        },
+        {
+            "purchase_id": "PUR019",
+            "customer_id": "C004",
+            "product_id": "P004",
+            "quantity": 3,
+            "price": 55.00,
+            "timestamp": "2025-06-19T23:25:52.884171"
+        },
+        {
+            "purchase_id": "PUR020",
+            "customer_id": "C005",
+            "product_id": "P004",
+            "quantity": 4,
+            "price": 55.00,
+            "timestamp": "2025-07-15T08:13:40.580703"
+        },
+        {
+            "purchase_id": "PUR021",
+            "customer_id": "C005",
+            "product_id": "P009",
+            "quantity": 5,
+            "price": 40.00,
+            "timestamp": "2025-06-18T16:10:46.376291"
+        },
+        {
+            "purchase_id": "PUR022",
+            "customer_id": "C001",
+            "product_id": "P005",
+            "quantity": 5,
+            "price": 35.00,
+            "timestamp": "2025-07-06T06:50:18.990957"
+        },
+        {
+            "purchase_id": "PUR023",
+            "customer_id": "C003",
+            "product_id": "P001",
+            "quantity": 1,
+            "price": 25.00,
+            "timestamp": "2025-06-29T07:23:21.561792"
+        },
+        {
+            "purchase_id": "PUR024",
+            "customer_id": "C008",
+            "product_id": "P007",
+            "quantity": 4,
+            "price": 75.00,
+            "timestamp": "2025-06-20T15:29:03.616891"
+        },
+        {
+            "purchase_id": "PUR025",
+            "customer_id": "C002",
+            "product_id": "P010",
+            "quantity": 1,
+            "price": 95.00,
+            "timestamp": "2025-06-30T06:06:09.488145"
+        },
+        {
+            "purchase_id": "PUR026",
+            "customer_id": "C004",
+            "product_id": "P006",
+            "quantity": 5,
+            "price": 60.00,
+            "timestamp": "2025-06-24T20:34:20.105746"
+        },
+        {
+            "purchase_id": "PUR027",
+            "customer_id": "C010",
+            "product_id": "P001",
+            "quantity": 1,
+            "price": 25.00,
+            "timestamp": "2025-06-21T08:26:07.951197"
+        },
+        {
+            "purchase_id": "PUR028",
+            "customer_id": "C006",
+            "product_id": "P006",
+            "quantity": 4,
+            "price": 60.00,
+            "timestamp": "2025-06-19T16:49:43.686612"
+        },
+        {
+            "purchase_id": "PUR029",
+            "customer_id": "C001",
+            "product_id": "P004",
+            "quantity": 2,
+            "price": 55.00,
+            "timestamp": "2025-06-29T22:02:45.138945"
+        },
+        {
+            "purchase_id": "PUR030",
+            "customer_id": "C006",
+            "product_id": "P001",
+            "quantity": 4,
+            "price": 25.00,
+            "timestamp": "2025-06-23T04:36:14.077272"
+        },
+        {
+            "purchase_id": "PUR031",
+            "customer_id": "C009",
+            "product_id": "P006",
+            "quantity": 5,
+            "price": 60.00,
+            "timestamp": "2025-07-13T03:13:07.544424"
+        },
+        {
+            "purchase_id": "PUR032",
+            "customer_id": "C003",
+            "product_id": "P010",
+            "quantity": 3,
+            "price": 95.00,
+            "timestamp": "2025-07-05T16:00:48.875754"
+        },
+        {
+            "purchase_id": "PUR033",
+            "customer_id": "C007",
+            "product_id": "P001",
+            "quantity": 1,
+            "price": 25.00,
+            "timestamp": "2025-07-03T00:54:26.757710"
+        },
+        {
+            "purchase_id": "PUR034",
+            "customer_id": "C010",
+            "product_id": "P005",
+            "quantity": 3,
+            "price": 35.00,
+            "timestamp": "2025-06-22T03:09:11.755456"
+        },
+        {
+            "purchase_id": "PUR035",
+            "customer_id": "C008",
+            "product_id": "P005",
+            "quantity": 4,
+            "price": 35.00,
+            "timestamp": "2025-07-10T09:45:16.664660"
+        },
+        {
+            "purchase_id": "PUR036",
+            "customer_id": "C010",
+            "product_id": "P003",
+            "quantity": 2,
+            "price": 45.00,
+            "timestamp": "2025-06-17T16:11:50.351449"
+        },
+        {
+            "purchase_id": "PUR037",
+            "customer_id": "C010",
+            "product_id": "P003",
+            "quantity": 1,
+            "price": 45.00,
+            "timestamp": "2025-07-09T12:17:55.347988"
+        },
+        {
+            "purchase_id": "PUR038",
+            "customer_id": "C001",
+            "product_id": "P005",
+            "quantity": 3,
+            "price": 35.00,
+            "timestamp": "2025-07-05T10:02:03.763082"
+        },
+        {
+            "purchase_id": "PUR039",
+            "customer_id": "C009",
+            "product_id": "P005",
+            "quantity": 2,
+            "price": 35.00,
+            "timestamp": "2025-07-09T10:31:16.912735"
+        },
+        {
+            "purchase_id": "PUR040",
+            "customer_id": "C005",
+            "product_id": "P005",
+            "quantity": 2,
+            "price": 35.00,
+            "timestamp": "2025-06-22T04:07:57.873908"
+        },
+        {
+            "purchase_id": "PUR041",
+            "customer_id": "C002",
+            "product_id": "P007",
+            "quantity": 4,
+            "price": 75.00,
+            "timestamp": "2025-06-20T13:50:21.189639"
+        },
+        {
+            "purchase_id": "PUR042",
+            "customer_id": "C003",
+            "product_id": "P008",
+            "quantity": 5,
+            "price": 85.00,
+            "timestamp": "2025-06-20T11:49:23.313966"
+        },
+        {
+            "purchase_id": "PUR043",
+            "customer_id": "C003",
+            "product_id": "P004",
+            "quantity": 4,
+            "price": 55.00,
+            "timestamp": "2025-07-08T16:32:50.632529"
+        },
+        {
+            "purchase_id": "PUR044",
+            "customer_id": "C004",
+            "product_id": "P005",
+            "quantity": 1,
+            "price": 35.00,
+            "timestamp": "2025-06-19T00:14:40.139028"
+        },
+        {
+            "purchase_id": "PUR045",
+            "customer_id": "C008",
+            "product_id": "P006",
+            "quantity": 3,
+            "price": 60.00,
+            "timestamp": "2025-06-18T19:38:23.057269"
+        },
+        {
+            "purchase_id": "PUR046",
+            "customer_id": "C008",
+            "product_id": "P007",
+            "quantity": 1,
+            "price": 75.00,
+            "timestamp": "2025-07-08T15:22:41.216385"
+        },
+        {
+            "purchase_id": "PUR047",
+            "customer_id": "C004",
+            "product_id": "P004",
+            "quantity": 4,
+            "price": 55.00,
+            "timestamp": "2025-06-24T16:36:44.493068"
+        },
+        {
+            "purchase_id": "PUR048",
+            "customer_id": "C010",
+            "product_id": "P009",
+            "quantity": 2,
+            "price": 40.00,
+            "timestamp": "2025-06-24T20:01:44.908894"
+        },
+        {
+            "purchase_id": "PUR049",
+            "customer_id": "C010",
+            "product_id": "P003",
+            "quantity": 3,
+            "price": 45.00,
+            "timestamp": "2025-06-24T08:33:45.760739"
+        }
+    ],
+    "expenses": [
+        {
+            "expense_id": "E101",
+            "description": "Office Rent",
+            "amount": 800.00
+        },
+        {
+            "expense_id": "E102",
+            "description": "Marketing",
+            "amount": 300.00
+        },
+        {
+            "expense_id": "E103",
+            "description": "Utilities",
+            "amount": 150.00
+        },
+        {
+            "expense_id": "E104",
+            "description": "Shipping",
+            "amount": 100.00
+        }
+    ]
+}

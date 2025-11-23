@@ -1,0 +1,12 @@
+[
+  {
+    "to": "owner@example.com",
+    "subject": "Restock",
+    "body": "Please restock low items."
+  },
+  {
+    "to": "owner@example.com",
+    "subject": "Restock",
+    "body": "Please restock low items."
+  }
+]

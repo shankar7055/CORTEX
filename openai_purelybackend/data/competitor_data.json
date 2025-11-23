@@ -1,0 +1,22 @@
+[
+    {
+        "product_name": "Competitor Product A",
+        "price": 25.0
+    },
+    {
+        "product_name": "Competitor Product B",
+        "price": 45.0
+    },
+    {
+        "product_name": "Competitor Product C",
+        "price": 60.0
+    },
+    {
+        "product_name": "Premium Widget",
+        "price": 89.99
+    },
+    {
+        "product_name": "Basic Gadget",
+        "price": 15.5
+    }
+]
