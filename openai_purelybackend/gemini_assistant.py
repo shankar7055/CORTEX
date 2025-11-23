@@ -35,8 +35,8 @@ class GeminiAssistant:
         try:
             response = self.model.generate_content(combined_prompt)
             return response.text
-        except Exception as e:
-            return f"Gemini Insight Error: {e}"
+        except Exception:
+            return self._fallback_insight(system_prompt, data_context)
 
     def chatbot_query(self, user_query, business_context):
         """
@@ -96,6 +96,47 @@ class GeminiAssistant:
             text = text.rstrip() + '.'
 
         return text
+
+    def _fallback_insight(self, system_prompt, data_context):
+        try:
+            if isinstance(data_context, dict):
+                tr = data_context.get("TotalRevenue")
+                gp = data_context.get("GrossProfit")
+                np = data_context.get("NetProfit")
+                tax = data_context.get("EstimatedTaxPayable")
+                if tr is not None or gp is not None or np is not None:
+                    tr_s = f"₹{round(float(tr),2)}" if tr is not None else "N/A"
+                    gp_s = f"₹{round(float(gp),2)}" if gp is not None else "N/A"
+                    np_s = f"₹{round(float(np),2)}" if np is not None else "N/A"
+                    tax_s = f"₹{round(float(tax),2)}" if tax is not None else "N/A"
+                    return (
+                        f"Executive summary based on local data: Revenue {tr_s}, Gross Profit {gp_s}, Net Profit {np_s}. "
+                        f"Estimated tax payable {tax_s}. Consider optimizing operating expenses and reviewing pricing to protect margins."
+                    )
+                low = data_context.get("LowStockReport")
+                if isinstance(low, list) and low:
+                    lines = []
+                    for item in low[:5]:
+                        name = item.get("name") or item.get("product_id")
+                        cs = item.get("current_stock")
+                        rq = item.get("recommendation_qty")
+                        lines.append(f"- {name}: current {cs}, recommend {rq}")
+                    return "Subject: Restock Request\n\nPlease restock the following items:\n" + "\n".join(lines)
+                internal = data_context.get("InternalProduct")
+                comp = data_context.get("ClosestCompetitor")
+                gap = data_context.get("PriceGap")
+                if internal or comp:
+                    name = (internal or {}).get("name", "Product")
+                    cg_name = (comp or {}).get("product_name", "competitor")
+                    gap_s = f"{round(float(gap),2)}" if gap is not None else "0"
+                    return (
+                        f"Pricing recommendation: consider testing a small adjustment for {name}. "
+                        f"Observed gap vs {cg_name}: {gap_s}. Maintain minimum margin and monitor conversion."
+                    )
+            txt = json.dumps(data_context) if isinstance(data_context, (dict, list)) else str(data_context)
+            return "Basic analysis based on provided data: " + self._format_response(txt)
+        except Exception:
+            return "Basic analysis is unavailable right now."
 
     def generate_structured_analysis(self, prompt, schema=None):
         """
